@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Loan Eligibility</title>
   <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" />
-  <link rel="icon" type="image/x-icon" href="{{url_for('static', filename ='images/job-icon.png')}}" />
 </head>
 <body>
 <div class="split left">
@@ -21,7 +20,7 @@
 <div class="centered">
   <h1 style="font-family: Papyrus;color:#404040">Loan Application Eligibility</h1>
   <h4 style="color:white">Please fill in your details</h4>
-  <form action="/" method="post">
+  <form action="/apply" method="post">
     <div>
       <input id="fullName" name="fullName" placeholder="Enter your full Name" type="text" size="50" maxlength="50" required="required">
     </div>
