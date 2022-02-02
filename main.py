@@ -13,7 +13,7 @@ def thankyou(status):
     return render_template('ThankYou.html', status=status)
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/apply', methods=['GET', 'POST'])
 def apply():
     if request.method == 'POST':
         fullname = request.form.get('fullName')
