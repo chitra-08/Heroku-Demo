@@ -12,6 +12,9 @@ def thankyou(status):
     print(status)
     return render_template('ThankYou.html', status=status)
 
+@app.route('/')
+def home():
+    return render_template('LoanApplication.html')
 
 @app.route('/apply', methods=['GET', 'POST'])
 def apply():
@@ -46,5 +49,5 @@ def apply():
 
     return render_template('LoanApplication.html')
 
-
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
