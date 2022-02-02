@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loan Eligibility</title>
+  <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="{{url_for('static', filename ='images/job-icon.png')}}" />
+</head>
+<body>
+<div class="split left">
+  <div class="card">
+    <img src="{{url_for('static', filename ='images/loan.png')}}" style="width:90%">
+    <h1>Eligibility Scanner</h1>
+    <p text-align="center">To check whether you are eligible for the loan in XYZ Bank, please fill the form.</p>
+    <p class="fee">Free Loan Eligibility Check</p>
+  </div>
+</div>
+<div class="top">
+  <p></p>
+</div>
+<div class="centered">
+  <h1 style="font-family: Papyrus;color:#404040">Loan Application Eligibility</h1>
+  <h4 style="color:white">Please fill in your details</h4>
+  <form action="/" method="post">
+    <div>
+      <input id="fullName" name="fullName" placeholder="Enter your full Name" type="text" size="50" maxlength="50" required="required">
+    </div>
+    <hr class = "rounded"/>
+    <div>
+      <input type="email" id="email" name="email" placeholder="Enter your email id" size="50" required="required" maxlength="60">
+    </div>
+    <hr class = "rounded"/>
+    <div>
+      <input type="text" id="age" name="age" placeholder="Enter your age"  required="required" size="50" pattern="\d*" maxlength="2">
+    </div>
+    <hr class = "rounded"/>
+    <div>
+      <input type="text" id="income" name="income" placeholder="Enter your yearly income"  required="required" size="50" pattern="\d*" maxlength="8">
+    </div>
+    <hr class = "rounded"/>
+    <div>
+      <input type="text" id="loanamt" name="loanamt" placeholder="Enter the loan amount"  required="required" size="50" pattern="\d*" maxlength="8">
+    </div>
+    <hr class = "rounded"/>
+    <div>
+      <select id="cr_hist" name="cr_hist" >
+        <option value="NA" selected >Had bank rejected your loan in the past? </option>
+        <option value="0">Yes</option>
+        <option value="1">No</option>
+        <option value="2">Not Applicable</option>
+      </select>
+    </div>
+    <hr class = "rounded"/>
+     <div>
+      <select id="prop_type" name="prop_type" >
+        <option value="NA" selected >What collateral you can provide for valuation? </option>
+        <option value="1">Real Property</option>
+        <option value="0">Others</option>
+      </select>
+    </div>
+    <hr class = "rounded"/>
+    <div class="reg">
+      <button type="submit">Check Eligibility</button>
+    </div>
+  </form>
+  <br/><br/><br/>
+</div>
+<br/>
+<div class="footer">
+  <p>&copy; All rights reserved 2022</p>
+</div>
+<div class="split right">
+  <div class="card">
+    <img src="{{url_for('static', filename ='images/about-us.png')}}" style="width:90%">
+    <h1>About Us</h1>
+    <p text-align="center">XYZ Bank brings the new AI feature which tells your eligibility to get a loan in few seconds.</p>
+    <p class="fee">Banking with us becomes easy</p>
+  </div>
+</div>
+</body>
+</html>

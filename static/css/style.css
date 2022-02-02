@@ -1,0 +1,95 @@
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #f8f8f8;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: #f8f8f8;
+}
+
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-45%, -50%);
+  text-align: left;
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 5px solid #f8f8f8;
+  border-radius: 3px;
+  align: center;
+
+}
+
+.card {
+  max-width: 200px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.fee {
+  color: grey;
+  font-size: 22px;
+}
+
+.reg button {
+  border:4;
+  border-color:#000;
+  outline: 3;
+  padding: 12px;
+  color: white;
+  background-color: #a0a0a0;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.reg button:hover {
+  opacity: 0.7;
+}
+
+body {
+ background-image: url("/static/images/bg4.jpg");
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: 100% 100%;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #f8f8f8;
+   color: black;
+   text-align: center;
+}
+.top {
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   background-color: #f8f8f8;
+   color: white;
+   text-align: center;
+}
