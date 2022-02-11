@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Loan Eligibility</title>
   <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="{{url_for('static', filename ='images/job-icon.png')}}" />
 </head>
 <body>
 <div class="split left">
@@ -58,6 +59,10 @@
       </select>
     </div>
     <hr class = "rounded"/>
+     <div>
+      <input type="text" id="propVal" name="propVal" placeholder="Enter the estimated property valuation rate if chosen Real Property"  required="required" size="50" pattern="\d*" maxlength="8">
+    </div>
+    <hr class = "rounded"/>
     <div class="reg">
       <button type="submit">Check Eligibility</button>
     </div>
@@ -66,7 +71,7 @@
 </div>
 <br/>
 <div class="footer">
-  <p>&copy; All rights reserved 2021 - Chitra Methwani</p>
+  <p>&copy; All rights reserved 2022</p>
 </div>
 <div class="split right">
   <div class="card">
